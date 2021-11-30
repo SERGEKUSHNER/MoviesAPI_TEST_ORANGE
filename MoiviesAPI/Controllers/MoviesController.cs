@@ -61,24 +61,6 @@ namespace MoviesAPI.Controllers
             return result;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IndexMoviePageDTO>> GetMostPopular()
-        {
-            var top = 5;
-           
-            var mostPopular = await context.Movies
-                .OrderBy(x => x.Likes)
-                .Take(top)
-                .ToListAsync();
-
-            
-
-            var result = new IndexMoviePageDTO();
-           
-            result.UpcomingReleases = mapper.Map<List<MovieDTO>>(mostPopular);
-
-            return result;
-        }
 
         [HttpGet("filter")]
         public async Task<ActionResult<List<MovieDTO>>> Filter([FromQuery] FilterMoviesDTO filterMoviesDTO)
