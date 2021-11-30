@@ -51,6 +51,8 @@ namespace MoiviesAPI.Database
             {
                 Id = 2,
                 Title = "Avengers: Endgame",
+                Rating = 8,
+                Likes = 888,
                 InTheaters = true,
                 ReleaseDate = new DateTime(2019, 04, 26)
             };
@@ -59,6 +61,8 @@ namespace MoiviesAPI.Database
             {
                 Id = 3,
                 Title = "Avengers: Infinity Wars",
+                Rating = 9,
+                Likes = 999,
                 InTheaters = false,
                 ReleaseDate = new DateTime(2019, 04, 26)
             };
@@ -67,6 +71,8 @@ namespace MoiviesAPI.Database
             {
                 Id = 4,
                 Title = "Sonic the Hedgehog",
+                Rating = 10,
+                Likes = 1000,
                 InTheaters = false,
                 ReleaseDate = new DateTime(2020, 02, 28)
             };
@@ -74,6 +80,8 @@ namespace MoiviesAPI.Database
             {
                 Id = 5,
                 Title = "Emma",
+                Rating = 7,
+                Likes = 777,
                 InTheaters = false,
                 ReleaseDate = new DateTime(2020, 02, 21)
             };
@@ -81,6 +89,8 @@ namespace MoiviesAPI.Database
             {
                 Id = 6,
                 Title = "Greed",
+                Rating = 5,
+                Likes = 555,
                 InTheaters = false,
                 ReleaseDate = new DateTime(2020, 02, 21)
             };
